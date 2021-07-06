@@ -1,5 +1,5 @@
+// single character variable as operand, with valid expression shall be input
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdbool.h>
 #define MAX_EXP_SIZE 20
 
@@ -31,7 +31,7 @@ int priority(char a)
     }
 }
 
-int main()
+int main()  // upper operator should strictly should be of top priority. NOT even of same priority
 {
     #include "../fileio.h"
     char operator[MAX_EXP_SIZE] = {'\0'}, operand[MAX_EXP_SIZE] = {'\0'}, a;
